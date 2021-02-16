@@ -9,7 +9,7 @@ import org.springframework.scheduling.annotation.Scheduled;
 public class Config {
 	@Value("${app.envi}")
 	private String env;
-	@Scheduled(fixedRate = 1000)
+	//@Scheduled(fixedRate = 1000)
 	public void test() {
 		System.out.println("Env is"+ env);
 	}
